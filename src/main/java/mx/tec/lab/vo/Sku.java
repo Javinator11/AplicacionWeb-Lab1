@@ -7,6 +7,9 @@ public class Sku {
 	private double listPrice;
 	private double salePrice;
 	private long quantityOnHand;
+	private String smallImgUrl;
+	private String mediumImgUrl;
+	private String largeImgUrl;
 	
 	/**
 	 * 
@@ -23,13 +26,16 @@ public class Sku {
 	 * @param salePrice
 	 * @param quantityOnHand
 	 */
-	public Sku(String id, String color, String size, double listPrice, double salePrice, long quantityOnHand) {
+	public Sku(String id, String color, String size, double listPrice, double salePrice, long quantityOnHand, String smallImgUrl, String mediumImgUrl, String largeImgUrl) {
 		this.id = id;
 		this.color = color;
 		this.size = size;
 		this.listPrice = listPrice;
 		this.salePrice = salePrice;
 		this.quantityOnHand = quantityOnHand;
+		this.smallImgUrl = smallImgUrl;
+		this.mediumImgUrl = mediumImgUrl;
+		this.largeImgUrl = largeImgUrl;
 	}
 
 	/**
@@ -113,6 +119,48 @@ public class Sku {
 	 */
 	public void setQuantityOnHand(long quantityOnHand) {
 		this.quantityOnHand = quantityOnHand;
+	}
+
+	/**
+	 * @return the smallImgUrl
+	 */
+	public String getSmallImgUrl() {
+		return smallImgUrl;
+	}
+
+	/**
+	 * @param smallImgUrl the smallImgUrl to set
+	 */
+	public void setSmallImgUrl(String smallImgUrl) {
+		this.smallImgUrl = smallImgUrl;
+	}
+
+	/**
+	 * @return the mediumImgUrl
+	 */
+	public String getMediumImgUrl() {
+		return mediumImgUrl;
+	}
+
+	/**
+	 * @param mediumImgUrl the mediumImgUrl to set
+	 */
+	public void setMediumImgUrl(String mediumImgUrl) {
+		this.mediumImgUrl = mediumImgUrl;
+	}
+
+	/**
+	 * @return the largeImgUrl
+	 */
+	public String getLargeImgUrl() {
+		return largeImgUrl;
+	}
+
+	/**
+	 * @param largeImgUrl the largeImgUrl to set
+	 */
+	public void setLargeImgUrl(String largeImgUrl) {
+		this.largeImgUrl = largeImgUrl;
 	}
 
 }
